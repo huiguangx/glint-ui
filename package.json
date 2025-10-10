@@ -1,0 +1,18 @@
+{
+  "name": "glint-ui",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C examples dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.4",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vue": "^3.5.22"
+  }
+}
