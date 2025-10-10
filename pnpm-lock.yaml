@@ -16,6 +16,10 @@ importers:
         version: 3.5.22(typescript@5.9.2)
 
   examples:
+    dependencies:
+      vue:
+        specifier: ^3.5.22
+        version: 3.5.22(typescript@5.9.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1

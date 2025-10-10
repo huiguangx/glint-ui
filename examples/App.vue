@@ -2,6 +2,11 @@
   <div id="app">
     <h1>Glint UI Examples</h1>
     <p>Welcome to Glint UI examples</p>
+    <GlintButton size="small" type="primary">我是按钮</GlintButton>
+    <br /><br />
+    <GlintButton size="large" type="danger">危险按钮</GlintButton>
+    <br /><br />
+    <GlintButton type="text">文字按钮</GlintButton>
   </div>
 </template>
 
