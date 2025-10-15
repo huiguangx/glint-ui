@@ -2,7 +2,7 @@
   <div id="app">
     <h1>Glint UI Examples</h1>
     <p>Welcome to Glint UI examples</p>
-    <GlintButton size="small" type="primary">我是按钮</GlintButton>
+    <GlintButton size="small" type="primary" @click="go">我是按钮</GlintButton>
     <br /><br />
     <GlintButton size="large" type="danger">危险按钮</GlintButton>
     <br /><br />
@@ -12,6 +12,9 @@
 
 <script setup lang="ts">
 // 这里可以导入并展示你的UI组件示例
+const go = () => {
+  console.log("点击了按钮");
+};
 </script>
 
 <style scoped>

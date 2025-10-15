@@ -18,6 +18,7 @@
     "vite": "^7.1.9"
   },
   "dependencies": {
-    "vue": "^3.5.22"
+    "vue": "^3.5.22",
+    "@glint-ui/components": "workspace:*"
   }
 }
