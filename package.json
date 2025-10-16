@@ -4,8 +4,12 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "pnpm -C examples dev"
+    "dev": "pnpm -C examples dev",
+    "docs:dev": "vitepress dev docs --config docs/.vitepress/config.mjs",
+    "docs:build": "vitepress build docs --config docs/.vitepress/config.mjs",
+    "docs:preview": "vitepress preview docs --config docs/.vitepress/config.mjs"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +17,7 @@
   "packageManager": "pnpm@10.6.4",
   "devDependencies": {
     "typescript": "^5.9.2",
+    "vitepress": "^1.6.4",
     "vue": "^3.5.22"
   }
 }
