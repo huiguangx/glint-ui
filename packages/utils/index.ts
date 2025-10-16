@@ -27,3 +27,22 @@ export const withInstall = <T, E extends Record<string, any>>(
 
   return main as SFCWithInstall<T> & E;
 };
+
+/**
+ * 自动导入组件工具函数
+ * 用于批量导入组件目录下的所有组件
+ * @param modules 通过 import.meta.glob 导入的模块对象
+ * @returns 组件数组
+ */
+export const autoImportComponents = (modules: Record<string, any>) => {
+  const components: any[] = [];
+  
+  Object.keys(modules).forEach((key) => {
+    const module = modules[key].default || modules[key];
+    if (module && typeof module === 'object') {
+      components.push(module);
+    }
+  });
+  
+  return components;
+};
